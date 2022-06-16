@@ -1,7 +1,10 @@
 #!/bin/sh
 . env/bin/activate
 export FLASK_APP=app
-flask run \
-	>/dev/null \
-	2>&1 &
+export FLASK_ENV=development
+flask run
+
+#flask run \
+#	>/dev/null \
+#	2>&1 &
 
